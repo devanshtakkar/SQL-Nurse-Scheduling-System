@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<!--(c) Saeed Mirjalili-->
+<!--Update a Record in a Table-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Select Records from a Table</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <form method="post" action="php/selectAllQuery.php">
+            <fieldset>
+                <legend>Display All Contracts</legend>
+                <br />
+                <br />
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+        <br />
+        <br />
+        <form method="post" action="php/selectLikeQuery.php">
+            <fieldset>
+                <legend>
+                    Display the contracts that contain the term in Illness
+                    description
+                </legend>
+                <label>Illness description contains</label>
+                <input type="text" name="term" /> <br />
+                <br />
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+
+        <br />
+        <br />
+        <form method="post" action="php/selectWhereQuery.php">
+            <fieldset>
+                <legend>Display Contracts of a Specific Nurse ID</legend>
+                <label>Nurse ID</label> <input type="number" name="NurseID" />
+                <br />
+                <br />
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+        <br />
+        <br />
+
+        <form method="post" action="php/selectBetweenQuery.php">
+            <fieldset>
+                <legend>
+                    Display Contracts that End in between given Date ranger
+                </legend>
+                <label>Range Start Date</label>
+                <input type="date" name="SDate" /> <br />
+                <label>Range End Date</label>
+                <input type="date" name="EDate" /> <br />
+                <br />
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+        <a href="index.html">Back to the Homepage</a>
+    </body>
+</html>

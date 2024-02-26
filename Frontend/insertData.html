@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<!--(c) Saeed Mirjalili-->
+<!--Insert Data HTML file-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Insert Data Into a Database</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <form method="post" action="php/insertIntoValues.php">
+            <fieldset>
+                <legend>Enter the information of the contract:</legend>
+
+                <label>Contract ID </label
+                ><input type="number" name="ContractID" /> <br />
+                <label>Start Date</label><input type="date" name="StartDate" />
+                <br />
+                <label>End Date</label><input type="date" name="EndDate" />
+                <br />
+                <label>Illness Description</label><br />
+                <input
+                    name="IllnessDescription"
+                    type="text"
+                    placeholder="Enter a small Illness Description"
+                />
+                <br />
+                <label>Nurse ID </label><input type="number" name="NurseID" />
+                <br />
+                <label>Client ID </label
+                ><input type="number" name="ClientID" /> <br />
+
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+        <br />
+        <a href="index.html">Back to the homepage</a>
+    </body>
+</html>
